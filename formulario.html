@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+      <form action="#" method="post">
+
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" name="nome"><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" name="email"><br>
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel"  name="telefone"><br>
+
+        <label for="data-nascimento">Data de Nascimento:</label><br>
+        <input type="date" name="data-nascimento" ><br>
+
+    
+        <p>Gênero:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino" >
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label><br><br>
+
+      
+        <label for="tipo">Tipo de Inscrição:</label><br>
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecione:</option>
+          <option value="palestrante">Palestrante</option>
+          <option value="participante">Participante</option>
+          <option value="voluntario">Voluntário</option>
+        </select><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" maxlength="200" rows="5" required></textarea><br><br>
+
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+</body>
+</html>
